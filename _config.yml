@@ -13,7 +13,8 @@ github_username:  g-gemignani
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: pages-themes/hacker
+#theme: minima
 plugins:
   - jekyll-feed
 
