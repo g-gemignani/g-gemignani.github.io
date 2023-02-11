@@ -1,0 +1,23 @@
+<section class="bg-gray" id="blog">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center text-black">
+            <h2 class="section-heading">Latest tutorials and learning notes</h2>
+            <hr class="primary">
+          </div>
+          <div class="col-lg-12 text-black text-left">
+            <ul class="posts h4">
+              {% for post in site.posts limit:3 %}
+              <li>
+                <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> ({{ post.date | date: "%b %-d, %Y" }})
+              </li>
+              <br>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="text-center">
+            <a href="/blog_main.html" class="btn btn-default btn-xl">See all notes!</a>
+          </div>
+      </div>
+    </div>
+</section>

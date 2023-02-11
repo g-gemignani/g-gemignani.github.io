@@ -1,32 +1,46 @@
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Guglielmo Gemignani
-email: guglielmogemignani@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Personal webpage describing projects of Guglielmo Gemignani
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://g-gemignani.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  g-gemignani
+title: Guglielmo Gemignani's personal page
+author:
+  name: Guglielmo Gemignani
+  email: guglielmogemignani@gmail.com
+  linkedin: https://www.linkedin.com/in/guglielmo-gemignani
+  github: https://github.com/g-gemignani
+  github_username: g-gemignani
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+minima:
+  #date_format: "%b %-d, %Y"
+  date_format: "%-d.%b.%Y"
+
+  # generate social links in footer
+  social_links:
+    # twitter: jekyllrb
+    github:  g-gemignani
+    # devto: jekyll
+    # dribbble: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    linkedin: guglielmo-gemignani
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    youtube_channel_name: GuglielmoGemignani
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
+
+# Build settings
+#theme: minima
+
+description: > # this means to ignore newlines until "show_excerpts:"
+  Guglielmo Gemignani's personal page
+url: "https://g-gemignani.github.io/" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-remote_theme: pages-themes/hacker@v0.2.0
-#theme: minima
 plugins:
-  - jekyll-feed
-  - jekyll-remote-theme # add this line to the plugins list if you already have one
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+ - jekyll-feed
+ - jekyll-seo-tag
+ - webrick
