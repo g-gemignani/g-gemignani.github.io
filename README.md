@@ -1,5 +1,5 @@
 # Personal page
-This project contains the code to build my personal page website. You can see it in action on the link: [https://g-gemignani.github.io](https://g-gemignani.github.io/).
+This project contains the code to build my personal page website. You can see it in action at the following link: [https://g-gemignani.github.io](https://g-gemignani.github.io/).
 
 ## About the page
 This **static web page** is created using [*Jekyll*](https://jekyllrb.com/) and the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) from [Start Bootstrap](http://startbootstrap.com). You can see the original template live in action at <https://volny.github.io/creative-theme-jekyll/>.
@@ -8,7 +8,7 @@ This **static web page** is created using [*Jekyll*](https://jekyllrb.com/) and 
 
 As it is mentioned above, this is a static page. This means that all the HTML code needs to be built beforehand in order to be displayed properly on the web browser. 
 But don't worry, GitHub will build the code for you every time you push. Nevertheless, pushing every 5 minutes (and cleaning the web browser cache) to see your page, does not sound like a good plan to develop a web page. 
-Instead, you can install *Jekyll* to build and publish your page directly on your computer. On *Ubuntu 20.04 or 22.04* you can do the following steps:
+Instead, you can install *Jekyll* to build and publish your page directly on your computer. On *Ubuntu 20.04 or 22.04*, to do so, you can take the following steps:
 <a name="deploy_code"></a>
 ```console
 # Clone repo
@@ -31,9 +31,9 @@ bundle exec jekyll serve
 # => Now browse to http://localhost:4000 to see your page!
 ```
 
-After getting a local copy of the page, you can now start modifying it:
+After getting a local copy of the website, you can now start modifying it:
 
-1. Adapt the page to your needs. There are many places that you need to modify in order to fully customize this page. However, some good places to star are the follow:
+1. Adapt the pages to your needs. There are many places that you need to modify in order to fully customize this page. However, some good places to star are the follow:
    - Personal information: `_config.yml` and `about.md`
    - Modify the structure of the page (reorder or remove section): `_layouts/front.html`
 
