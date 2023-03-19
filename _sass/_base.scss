@@ -326,13 +326,13 @@ header {
 ::-moz-selection {
     color: white;
     text-shadow: none;
-    background: $theme-dark;
+    background: DarkSlateBlue;
 }
 
 ::selection {
     color: white;
     text-shadow: none;
-    background: $theme-dark;
+    background: DarkSlateBlue;
 }
 
 img::selection {
