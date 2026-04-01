@@ -2,26 +2,29 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Let's Get In Touch!</h2>
+                <h2 class="section-heading">Contact</h2>
                 <hr class="primary">
-                <p>Do you have any question? Don't hesitate to contact me!</p>
+                <p>If you would like to discuss robotics, research, or collaboration opportunities, feel free to reach out.</p>
             </div>
         <div class="col-lg-2 col-lg-offset-2 text-center">
-            <a href="{{ site.author.linkedin }}">
+            <a class="contact-link" href="{{ site.author.linkedin }}" target="_blank" rel="noopener">
                 <i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>{{ site.author.name }}</p>
+                <p class="contact-label">LinkedIn</p>
+                <p class="contact-detail">{{ site.author.name }}</p>
             </a>
         </div>
         <div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="mailto:{{ site.author.email}}">
+            <a class="contact-link" href="mailto:{{ site.author.email}}">
             <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>{{ site.author.name }}</p>
+                <p class="contact-label">Email</p>
+                <p class="contact-detail">{{ site.author.email }}</p>
             </a>
         </div>
         <div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="{{ site.author.github }}">
+            <a class="contact-link" href="{{ site.author.github }}" target="_blank" rel="noopener">
             <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p>{{ site.author.github_username }}</p>
+                <p class="contact-label">GitHub</p>
+                <p class="contact-detail">{{ site.author.github_username }}</p>
             </a>
         </div>
 

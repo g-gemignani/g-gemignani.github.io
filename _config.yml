@@ -35,12 +35,11 @@ minima:
 #theme: minima
 
 description: > # this means to ignore newlines until "show_excerpts:"
-  Guglielmo Gemignani's personal page
+  Robotics leader and researcher working at the intersection of autonomous systems, AI, and intelligent robot behavior.
 url: "https://g-gemignani.github.io/" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 plugins:
- - jekyll-feed
  - jekyll-seo-tag
  - webrick

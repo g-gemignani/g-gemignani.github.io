@@ -1,6 +1,18 @@
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+{% if page.url == "/" %}
+  {% assign section_prefix = "" %}
+  {% assign section_link_class = "page-scroll" %}
+  {% assign brand_href = "#page-top" %}
+  {% assign brand_class = "navbar-brand page-scroll" %}
+  {% assign nav_class = "navbar navbar-default navbar-fixed-top site-nav-solid" %}
+{% else %}
+  {% assign section_prefix = "/" | relative_url %}
+  {% assign section_link_class = "" %}
+  {% assign brand_href = "/" | relative_url %}
+  {% assign brand_class = "navbar-brand" %}
+  {% assign nav_class = "navbar navbar-default navbar-fixed-top site-nav-solid inner-page-nav" %}
+{% endif %}
+<nav id="mainNav" class="{{ nav_class }}">
     <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -8,27 +20,30 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">To the Top</a>
+            <a class="{{ brand_class }}" href="{{ brand_href }}">{{ site.author.name }}</a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="/index.html#about">About me</a>
+                    <a {% if section_link_class != "" %}class="{{ section_link_class }}"{% endif %} href="{{ section_prefix }}#about">Profile</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="/index.html#portfolio">Portfolio</a>
+                    <a href="{{ '/about/' | relative_url }}">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="/index.html#contact">Contact</a>
+                    <a {% if section_link_class != "" %}class="{{ section_link_class }}"{% endif %} href="{{ section_prefix }}#portfolio">Selected work</a>
                 </li>
                 <li>
-                    <a href="/publications.html">Publications</a>
+                    <a href="{{ '/publications/' | relative_url }}">Publications</a>
                 </li>
-                
+                <li>
+                    <a href="{{ '/files/CV.pdf' | relative_url }}">CV</a>
+                </li>
+                <li>
+                    <a {% if section_link_class != "" %}class="{{ section_link_class }}"{% endif %} href="{{ section_prefix }}#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
 </nav>
