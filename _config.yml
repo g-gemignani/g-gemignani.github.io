@@ -13,6 +13,8 @@ description: >
 url: "https://g-gemignani.github.io" # the base hostname & protocol for your site
 
 # Build settings
+exclude:
+ - cv-source
 markdown: kramdown
 plugins:
  - jekyll-seo-tag
