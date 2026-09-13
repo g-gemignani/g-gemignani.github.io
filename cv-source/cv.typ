@@ -10,7 +10,7 @@
 )
 #set text(font: "Poppins", size: 9pt, fill: black, hyphenate: false,
   top-edge: 0.75em, bottom-edge: -0.25em)
-#set par(justify: true, leading: 3pt, spacing: 7pt)
+#set par(justify: false, leading: 3pt, spacing: 7pt)
 #show link: it => text(fill: linkblue, underline(it))
 
 #let heading-l(title) = block(above: 16pt, below: 13pt)[
@@ -35,23 +35,24 @@
 
 #let job(title, dates, company, bullets, keywords) = block(below: 14pt, breakable: false)[
   #grid(
-    columns: (212pt, 1fr),
+    columns: (207pt, 1fr),
     align: (left, right + horizon),
     par(justify: false, text(size: 12pt, weight: "medium", fill: maroon)[#title]),
-    text(size: 9pt)[#dates],
+    box(text(size: 9pt)[#dates]),  // a date never wraps
   )
   #v(-4pt)
   #text(size: 9pt, weight: "semibold")[#company]
   #v(1pt)
   #bullets
   #v(1pt)
-  #text(size: 9pt)[#emph[Keywords]: #keywords]
+  #par(justify: true, text(size: 9pt)[#emph[Keywords]: #keywords])
 ]
 
 #let edu(degree, school, note, years) = block(below: 11pt)[
   #text(size: 12pt, weight: "medium")[#degree]
   #v(-2pt)
-  #pad(left: 20pt)[
+  // The original bullets the school line and indents it under the degree.
+  #list(indent: 8pt, body-indent: 9pt)[
     #text(size: 9pt, weight: "semibold")[#school] \
     #text(size: 9pt)[#note, #years]
   ]
@@ -60,7 +61,7 @@
 #let extra(title, note) = block(below: 9pt)[
   #list(text(size: 9pt, weight: "semibold")[#title])
   #v(-4pt)
-  #pad(left: 21pt, text(size: 9pt)[#note])
+  #pad(left: 10.5pt, text(size: 9pt)[#note])
 ]
 
 #set list(
@@ -105,12 +106,15 @@
 
     #heading-l[Profile]
 
-    A robotics and AI expert with 15+ years of experience and more than eight
-    years leading engineering teams. Currently leads the software department of a
-    startup building uncrewed aerial systems, covering drone software and Ground
-    Control Stations, from architecture and autonomy to simulation, software QA, and
-    compliance with aerospace standards. Holds a PhD in Robotics and Artificial
-    Intelligence, with 20+ academic publications and four patents.
+    #par(justify: true)[
+      A robotics and AI expert with 15+ years of experience and more than eight
+      years leading engineering teams. Currently leads the software department of
+      a startup building uncrewed aerial systems, covering drone software and
+      Ground Control Stations, from architecture and autonomy to simulation,
+      software QA, and compliance with aerospace standards. Holds a PhD in
+      Robotics and Artificial Intelligence, with 20+ academic publications and
+      four patents.
+    ]
 
     #heading-l[Work Experience]
 
@@ -166,7 +170,7 @@
 
     #heading-l[Additional Experience]
 
-    #extra[Author, maintainer and contributor of various open and closed source projects][#emph[Repositories]: #link("https://github.com/ros/diagnostics")[ros/diagnostics], #link("https://github.com/aiplan4eu/UP4ROS2")[UP4ROS2], #link("https://github.com/yuce/pyswip")[pyswip], #link("https://github.com/iocchi/PetriNetPlans")[PetriNetPlans], #link("https://github.com/ros/geometry2")[ros/geometry2], behavior_trees, robot_state_reasoning, topological_graph_planner, and others.]
+    #extra[Author, maintainer and contributor of various open and closed source projects][#emph[Repositories]: #box[#link("https://github.com/ros/diagnostics")[ros/diagnostics]], #box[#link("https://github.com/aiplan4eu/UP4ROS2")[UP4ROS2]], #box[#link("https://github.com/yuce/pyswip")[pyswip]], #box[#link("https://github.com/iocchi/PetriNetPlans")[PetriNetPlans]], #box[#link("https://github.com/ros/geometry2")[ros/geometry2]], behavior_trees, robot_state_reasoning, topological_graph_planner, and others.]
     #extra[European Project Reviewer][#emph[Project]: #link("https://sciroc.org")[SciRoc] (EU-H2020)]
     #extra[SPC, PC and Reviewer for various international conferences][#emph[Conferences]: IJCAI, ECAI, AI\*IA, and others.]
     #extra[International Research Project Contributor][#emph[Projects]: AIPlan4EU (EU-H2020 funded project), RoboDevOps (Bavarian funded project)]
