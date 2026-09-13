@@ -16,7 +16,7 @@ Today I am Head of Software at 24 Industries, a startup that builds uncrewed aer
 
 ## Background
 
-Before that I spent years in logistics robotics, where I led a team of more than 20 engineers responsible for robot architecture design, robot behavior development, simulation, and software quality assurance. I have worked mainly in Python, C++, and Prolog, on ROS.
+Before that I spent years in logistics robotics, where I led a team of more than 20 engineers responsible for robot architecture design, robot behavior development, simulation, and software and hardware quality assurance. I have worked mainly in Python, C++, and Prolog, on ROS.
 
 I came to robotics through physics and then artificial intelligence. During my PhD in Robotics and Artificial Intelligence at Sapienza University of Rome, and a visiting period at Carnegie Mellon University, I worked on semantic mapping, human-robot interaction, task acquisition, and knowledge representation.
 

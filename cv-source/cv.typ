@@ -122,10 +122,10 @@
 
     #job[Head of Robotic Integration][Mar 2022 - Jul 2026][Magazino - a Jungheinrich Company | Munich][
       - Disciplinary supervisor and technical lead for a team of 20+ developers across two companies.
-      - Responsible for robot architecture design, behavior development, robot simulators, and software quality assurance.
+      - Responsible for robot architecture design, behavior development, robot simulators, and software and hardware quality assurance.
       - Focus on developing high-level software for autonomous robots, including #link("https://www.youtube.com/watch?v=GkgxTrbMg0s")[TORU], #link("https://www.youtube.com/watch?v=LX86Kj5-U3I")[SOTO], and #link("https://www.youtube.com/watch?v=R-jDYvZLctU")[Jungheinrich's EAEa].
       - Managed and enhanced a commercial Behavior Tree-based framework, adopted by multinational companies for autonomous robot behavior development, contributing to the successful acquisition of the company.
-    ][SCRUM, SAFe, Product Owner, Product Requirements, Behavior Trees, VDA5050, ROS, Unity, Gazebo, GitLab, Docker, Testing Strategy]
+    ][SCRUM, SAFe, Product Owner, Product Requirements, Behavior Trees, VDA5050, SW & HW QA, ROS, Unity, Gazebo, GitLab, Docker, Testing Strategy]
 
     #job[Team Lead Behaviors & Reasoning][Jan 2018 - Mar 2022][Magazino GmbH | Munich][
       - Supervised a multidisciplinary team, specializing in robot behavior development, data analysis, and software QA.
