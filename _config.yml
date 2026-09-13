@@ -1,5 +1,6 @@
 # Site settings
-title: Guglielmo Gemignani's personal page
+title: Guglielmo Gemignani
+tagline: Head of Software, robotics and AI
 author:
   name: Guglielmo Gemignani
   email: guglielmogemignani@gmail.com
@@ -16,3 +17,9 @@ markdown: kramdown
 plugins:
  - jekyll-seo-tag
  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /img/og-image.jpg

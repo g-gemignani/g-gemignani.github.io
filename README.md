@@ -2,7 +2,7 @@
 This project contains the code to build my personal page website. You can see it in action at the following link: [https://g-gemignani.github.io](https://g-gemignani.github.io/).
 
 ## About the page
-This **static web page** is created using [*Jekyll*](https://jekyllrb.com/) and the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) from [Start Bootstrap](http://startbootstrap.com). You can see the original template live in action at <https://volny.github.io/creative-theme-jekyll/>.
+This **static web page** is created using [*Jekyll*](https://jekyllrb.com/) and the [Creative Theme](https://startbootstrap.com/template-overviews/creative/) from [Start Bootstrap](https://startbootstrap.com). You can see the original template live in action at <https://volny.github.io/creative-theme-jekyll/>.
 
 ## Adapt and build this page
 

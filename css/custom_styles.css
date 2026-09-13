@@ -320,6 +320,14 @@ header .header-content .header-content-inner h1 {
   line-height: 1.1;
 }
 
+/* Contact icons. Inline SVG replaces Font Awesome, which shipped 992 KB of
+   web fonts to draw three glyphs. */
+.contact-icon {
+  width: 3em;
+  height: 3em;
+  fill: currentColor;
+}
+
 /* Scroll-in bounce for the contact icons. Replaces wow.js and the 52 KB of
    animate.min.css with the one keyframe set that the site uses. The `js`
    class comes from site.js, so the icons stay visible without JavaScript. */
@@ -381,4 +389,18 @@ header .header-content .header-content-inner h1 {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Keyboard focus. Bootstrap 3 gives a thin dotted outline that is close to
+   invisible on the white navbar. */
+:focus-visible {
+  outline: 3px solid #1766a3;
+  outline-offset: 2px;
+}
+
+.bg-primary :focus-visible,
+.bg-dark :focus-visible,
+.dark-page :focus-visible,
+header :focus-visible {
+  outline-color: #ffffff;
 }
