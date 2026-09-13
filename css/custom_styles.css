@@ -18,17 +18,26 @@ a.bg-gray:hover {
   background-image: none;
 }
 
-.header-lead {
+/* The theme styles header paragraphs as `header .header-content
+   .header-content-inner p`, which outranks a plain class. Match that chain,
+   or these sizes and colors do not apply. */
+header .header-content .header-content-inner p.header-lead {
   margin: 0 0 12px;
+  color: #fff;
   font-size: 28px;
   font-weight: 700;
 }
 
-.header-summary {
+header .header-content .header-content-inner p.header-summary {
   margin: 0 auto 24px;
   max-width: 720px;
+  color: #fff;
   font-size: 20px;
   line-height: 1.6;
+}
+
+.text-white-shadow {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
 }
 
 .header-secondary-action {
@@ -43,7 +52,7 @@ header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.28);
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .header-content,
@@ -241,11 +250,11 @@ header::before {
 }
 
 @media screen and (max-width: 768px) {
-  .header-lead {
+  header .header-content .header-content-inner p.header-lead {
     font-size: 22px;
   }
 
-  .header-summary {
+  header .header-content .header-content-inner p.header-summary {
     font-size: 18px;
   }
 
