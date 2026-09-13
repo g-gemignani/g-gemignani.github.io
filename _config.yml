@@ -7,39 +7,12 @@ author:
   github: https://github.com/g-gemignani
   github_username: g-gemignani
 
-show_excerpts: false # set to true to show excerpts on the homepage
-
-minima:
-  #date_format: "%b %-d, %Y"
-  date_format: "%-d.%b.%Y"
-
-  # generate social links in footer
-  social_links:
-    # twitter: jekyllrb
-    github:  g-gemignani
-    # devto: jekyll
-    # dribbble: jekyll
-    # flickr:   jekyll
-    # instagram: jekyll
-    linkedin: guglielmo-gemignani
-    # pinterest: jekyll
-    # youtube: jekyll
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    youtube_channel_name: GuglielmoGemignani
-    # telegram: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
-    # keybase: jekyll
-
-# Build settings
-#theme: minima
-
-description: > # this means to ignore newlines until "show_excerpts:"
+description: >
   Software leader and researcher working on uncrewed aerial systems, autonomous robots, AI, and intelligent machine behavior.
-url: "https://g-gemignani.github.io/" # the base hostname & protocol for your site
+url: "https://g-gemignani.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 plugins:
  - jekyll-seo-tag
- - webrick
+ - jekyll-sitemap
