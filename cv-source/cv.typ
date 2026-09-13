@@ -108,7 +108,7 @@
     A robotics and AI expert with 15+ years of experience and more than eight
     years leading engineering teams. Currently leads the software department of a
     startup building uncrewed aerial systems, covering drone software and Ground
-    Control Stations, from architecture and autonomy to simulation, QA, and
+    Control Stations, from architecture and autonomy to simulation, software QA, and
     compliance with aerospace standards. Holds a PhD in Robotics and Artificial
     Intelligence, with 20+ academic publications and four patents.
 
@@ -116,13 +116,13 @@
 
     #job[Head of Software][Jul 2026 - Present][Twentyfour Industries | Munich][
       - Lead the software department of a startup building uncrewed aerial systems.
-      - Responsible for drone software and Ground Control Stations, from architecture and autonomy to simulation and product quality assurance.
+      - Responsible for drone software and Ground Control Stations, from architecture and autonomy to simulation and software quality assurance.
       - Own compliance with aerospace standards, and hire and grow the engineering organization.
     ][UAS, Ground Control Stations, Autonomy, Simulation, SW QA, Aerospace Standards, Hiring]
 
     #job[Head of Robotic Integration][Mar 2022 - Jul 2026][Magazino - a Jungheinrich Company | Munich][
       - Disciplinary supervisor and technical lead for a team of 20+ developers across two companies.
-      - Responsible for robot architecture design, behavior development, robot simulators, and product quality assurance.
+      - Responsible for robot architecture design, behavior development, robot simulators, and software quality assurance.
       - Focus on developing high-level software for autonomous robots, including #link("https://www.youtube.com/watch?v=GkgxTrbMg0s")[TORU], #link("https://www.youtube.com/watch?v=LX86Kj5-U3I")[SOTO], and #link("https://www.youtube.com/watch?v=R-jDYvZLctU")[Jungheinrich's EAEa].
       - Managed and enhanced a commercial Behavior Tree-based framework, adopted by multinational companies for autonomous robot behavior development, contributing to the successful acquisition of the company.
     ][SCRUM, SAFe, Product Owner, Product Requirements, Behavior Trees, VDA5050, ROS, Unity, Gazebo, GitLab, Docker, Testing Strategy]

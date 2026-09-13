@@ -12,11 +12,11 @@ I work on autonomous machines, and on how intelligent behavior gets designed and
 
 ## Current work
 
-Today I am Head of Software at 24 Industries, a startup that builds uncrewed aerial systems. The work covers drone software and Ground Control Stations: architecture, autonomy, simulation, quality assurance, and compliance with aerospace standards. It also covers the parts nobody puts in a talk: making behavior reliable, fitting software to hardware limits, hiring, and keeping a growing team able to follow its own code.
+Today I am Head of Software at 24 Industries, a startup that builds uncrewed aerial systems. The work covers drone software and Ground Control Stations: architecture, autonomy, simulation, software quality assurance, and compliance with aerospace standards. It also covers the parts nobody puts in a talk: making behavior reliable, fitting software to hardware limits, hiring, and keeping a growing team able to follow its own code.
 
 ## Background
 
-Before that I spent years in logistics robotics, where I led a team of more than 20 engineers responsible for robot architecture design, robot behavior development, simulation, and product quality assurance. I have worked mainly in Python, C++, and Prolog, on ROS.
+Before that I spent years in logistics robotics, where I led a team of more than 20 engineers responsible for robot architecture design, robot behavior development, simulation, and software quality assurance. I have worked mainly in Python, C++, and Prolog, on ROS.
 
 I came to robotics through physics and then artificial intelligence. During my PhD in Robotics and Artificial Intelligence at Sapienza University of Rome, and a visiting period at Carnegie Mellon University, I worked on semantic mapping, human-robot interaction, task acquisition, and knowledge representation.
 
