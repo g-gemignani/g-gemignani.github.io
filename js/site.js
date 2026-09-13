@@ -5,6 +5,10 @@
 (function () {
   'use strict';
 
+  // Tell the CSS that scripting is on. Without this class the elements that
+  // animate in stay visible.
+  document.documentElement.classList.add('js');
+
   var toggle = document.querySelector('.navbar-toggle');
   var menu = document.querySelector('.navbar-collapse');
 
@@ -28,11 +32,32 @@
     });
   }
 
-  // Mark the nav entry of the section in the middle of the viewport.
-  // Replaces Bootstrap scrollspy.
   if (!('IntersectionObserver' in window)) {
     return;
   }
+
+  // Play the bounce when an element scrolls into view. Replaces wow.js.
+  var reveal = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          reveal.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: '0px 0px -10% 0px' }
+  );
+
+  Array.prototype.forEach.call(
+    document.querySelectorAll('.animate-on-view'),
+    function (el) {
+      reveal.observe(el);
+    }
+  );
+
+  // Mark the nav entry of the section in the middle of the viewport.
+  // Replaces Bootstrap scrollspy.
 
   var pairs = [];
   Array.prototype.forEach.call(

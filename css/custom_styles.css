@@ -320,9 +320,57 @@ header .header-content .header-content-inner h1 {
   line-height: 1.1;
 }
 
+/* Scroll-in bounce for the contact icons. Replaces wow.js and the 52 KB of
+   animate.min.css with the one keyframe set that the site uses. The `js`
+   class comes from site.js, so the icons stay visible without JavaScript. */
+.js .animate-on-view {
+  opacity: 0;
+}
+
+.js .animate-on-view.is-visible {
+  animation: bounce-in 0.75s 0.1s both;
+}
+
+@keyframes bounce-in {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .js .animate-on-view {
+    opacity: 1;
+    animation: none !important;
   }
 
   *,
