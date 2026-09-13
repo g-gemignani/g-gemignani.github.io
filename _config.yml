@@ -35,7 +35,7 @@ minima:
 #theme: minima
 
 description: > # this means to ignore newlines until "show_excerpts:"
-  Robotics leader and researcher working at the intersection of autonomous systems, AI, and intelligent robot behavior.
+  Software leader and researcher working on uncrewed aerial systems, autonomous robots, AI, and intelligent machine behavior.
 url: "https://g-gemignani.github.io/" # the base hostname & protocol for your site
 
 # Build settings
